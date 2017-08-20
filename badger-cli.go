@@ -1,27 +1,20 @@
-/*
- * Copyright 2017 Dgraph Labs, Inc. and Contributors
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/* badger-cli
 
-/* badger_info
+Usage:
 
-Usage: badger_cli --dir x [--value-dir y]
+  ./badger-cli [OPTIONS] [SYNTAX]
 
-This command prints information about the badger key-value store.  It reads MANIFEST and prints its
-info. It also prints info about missing/extra files, and general information about the value log
-files (which are not referenced by the manifest).  Use this tool to report any issues about Badger
-to the Dgraph team.
+Syntax:
+  get <KEY>                 get value by key
+  set <KEY> <VALUE> <META>  set item by key and value
+  delete <KEY>              delete item by key
+  dump                      dump item list
+  (nil)                     no syntax starts interactive shell
+Options:
+  -dir string
+    	The Badger database's index directory
+  -value-dir string
+    	The Badger database's value log directory, if different from the index directory
 */
 package main
 
