@@ -1,7 +1,6 @@
 # badger-cli
----
 
-A simple interactive and batch shell for badger key-value store.
+A simple interactive and batch shell for [badger key-value store](https://github.com/dgraph-io/badger).
 
 ### Build
 
@@ -80,7 +79,7 @@ orange 200
 
 #### batch mode
 
-1.) set item by key and value 
+1) set item by key and value 
 
 ~~~
 ./badger-cli --dir=/tmp/badger-test set banana 500
@@ -97,4 +96,5 @@ orange 200
 
 ~~~
 ./badger-cli --dir=/tmp/badger-test dump
+banana 500
 ~~~
