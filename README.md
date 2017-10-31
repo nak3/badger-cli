@@ -7,7 +7,7 @@ A simple interactive and batch shell for [badger key-value store](https://github
 ~~~
 git clone https://github.com/nak3/badger-cli.git
 cd badger-cli
-go build badger-cli
+go build ./...
 ~~~
 
 ### Usage
